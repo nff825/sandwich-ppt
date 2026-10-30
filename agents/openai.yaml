@@ -1,0 +1,4 @@
+interface:
+  display_name: "三明治 PPT"
+  short_description: "使用默认蓝色单页或指定模板，制作上说明、中图片、下结论的演示文稿"
+  default_prompt: "使用 $sandwich-ppt，按默认单页模板制作演示文稿，不额外添加封面。"
