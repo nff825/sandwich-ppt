@@ -20,6 +20,8 @@ class PackageTests(unittest.TestCase):
         self.addCleanup(self.temporary.cleanup)
         self.root = Path(self.temporary.name) / "fixture-skill"
         self.root.mkdir()
+        # Windows TEMP may use an 8.3 alias; match the packager's resolved path.
+        self.root = self.root.resolve()
         self.write("VERSION", b"0.1.0\n")
 
     def write(self, relative, data=b"example"):
