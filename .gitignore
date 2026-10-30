@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.build/
+_local/
+dist/
+release/
+style-report.json
+~$*.pptx
